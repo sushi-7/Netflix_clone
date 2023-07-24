@@ -6,3 +6,219 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('nav__black');
   }
 });
+
+/*
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix_style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
+        </div>
+        <h1 class="banner__description">
+            Premise. Set in Madrid, a mysterious man known as the "Professor" recruits a group of eight people, who choose city names as their aliases, to carry out an ambitious plan that involves entering the Royal Mint of Spain, and escaping with €984 million.
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="images/large-movie1.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie2.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie3.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie4.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie5.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie6.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie7.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="images/large-movie8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic1.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic2.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic3.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic4.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic5.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic6.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic7.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic8.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+      <h2>Top Rated</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic9.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic10.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic11.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic12.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic13.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic14.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic15.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic16.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic17.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic18.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic19.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic20.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic21.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic22.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic23.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic24.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+    <div class="row">
+      <h2>Comedy Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic4.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic6.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic2.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic1.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic3.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic5.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic8.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic7.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Horror Movies -->
+    <div class="row">
+      <h2>Horror Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic11.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic13.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic16.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic14.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic12.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic15.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic17.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic18.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Romance Movies -->
+    <div class="row">
+      <h2>Romance Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic1.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic25.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic2.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic24.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic3.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic23.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic4.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic22.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic12.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Documentaries -->
+    <div class="row">
+      <h2>Documentaries</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="images/smallpic10.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic21.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic6.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic15.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic9.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic14.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic18.jpg" alt="" />
+
+        <img class="row__poster" src="images/smallpic23.jpg" alt="" />
+      </div>
+    </div>
+
+    <script src="netflixjs.js">
+    </script>
+  </body>
+</html>
+*/
